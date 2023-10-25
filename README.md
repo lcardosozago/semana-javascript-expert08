@@ -1,5 +1,7 @@
 # JSExpertHub Pre-processing videos in browsers - JS Expert Week 8.0
 
+## This project is experimental and aims to preprocess videos in the client's browser in order to save resources.
+
 Welcome to the eighth Javascript Expert Week. This is the starter code to begin our journey.
 
 Star this project with a 🌟 and join our [official WhatsApp group](https://l.erickwendel.com.br/jse8-grupo)
