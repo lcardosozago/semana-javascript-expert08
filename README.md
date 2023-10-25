@@ -1,55 +1,55 @@
-# JSExpertHub Pre-processing videos on browsers - Semana JS Expert 8.0
+# JSExpertHub Pre-processing videos in browsers - JS Expert Week 8.0
 
-Seja bem vindo(a) à oitava Semana Javascript Expert. Este é o código inicial para iniciar nossa jornada.
+Welcome to the eighth Javascript Expert Week. This is the starter code to begin our journey.
 
-Marque esse projeto com uma estrela 🌟 e acesse o nosso [grupo oficial no WhatsApp](https://l.erickwendel.com.br/jse8-grupo)
+Star this project with a 🌟 and join our [official WhatsApp group](https://l.erickwendel.com.br/jse8-grupo)
+
 ## Preview
 <img width=100% src="./initial-template/demo.gif">
 
-## Pre-reqs
-- Este projeto foi criado usando Node.js v18.17.0
-- O ideal é que você use o projeto em ambiente Unix (Linux). Se você estiver no Windows, é recomendado que use o [Windows Subsystem Linux](https://www.omgubuntu.co.uk/how-to-install-wsl2-on-windows-10) pois nas aulas são mostrados comandos Linux que possam não existir no Windows.
+## Pre-requirements
+- This project was created using Node.js v18.17.0
+- It's recommended that you run the project in a Unix environment (Linux). If you are on Windows, it's advised to use [Windows Subsystem for Linux](https://www.omgubuntu.co.uk/how-to-install-wsl2-on-windows-10) because the lessons showcase Linux commands that might not exist on Windows.
 
-## Importante
-- Todo dia às 18hrs estou subindo o código das aulas do dia corrente em [classes](./classes). Se você for iniciar o projeto, remova a pasta [classes](./classes) para iniciar do zero!
+## Important
+- Every day at 6 pm I'm uploading the day's lesson code in [classes](./classes). If you are starting the project, remove the [classes](./classes) folder to start from scratch!
 
 ## Running
-- Execute `npm ci` na pasta que contém o arquivo `package.json` para restaurar os pacotes
-- Execute `npm start` e em seguida vá para o seu navegador em [http://localhost:3000](http://localhost:3000) para visualizar a página acima
+- Run `npm ci` in the folder containing the `package.json` file to restore packages.
+- Execute `npm start` and then go to your browser at [http://localhost:3000](http://localhost:3000) to view the page above.
 
 ## Checklist Features
 
 - Video Uploader
-  - [] - Deve entender videos em formato MP4 mesmo se não estiverem fragmentados
-  - [] - Deve processar itens em threads isoladas com Web Workers
-  - [] - Deve converter fragmentos de videos em formato `144p`
-  - [] - Deve renderizar frames em tempo real em elemento canvas
-  - [] - Deve gerar arquivos WebM a partir de fragmentos
+  - [] - Should understand MP4 format videos even if they are not fragmented.
+  - [] - Should process items in isolated threads with Web Workers.
+  - [] - Should convert video fragments to `144p` format.
+  - [] - Should render frames in real-time on a canvas element.
+  - [] - Should generate WebM files from fragments.
 
-### Desafios
-- [] - Encodar em 360p e 720p
-- [] - Fazer encoding/decoding track de áudio
-- [] - Fazer também upload de track de áudio
-- [] - Concatenar o arquivo final no servidor em um arquivo só
-- [] - Corrigir problema do Webm de não mostrar a duração do video
-- [] - Corrigir a responsividade do site
-- [] - Tentar usar outros muxers
+### Challenges
+- [] - Encode in 360p and 720p.
+- [] - Do audio track encoding/decoding.
+- [] - Also upload the audio track.
+- [] - Concatenate the final file on the server into a single file.
+- [] - Fix the Webm issue of not displaying video duration.
+- [] - Fix the website's responsiveness.
+- [] - Try using other muxers.
   - https://github.com/Vanilagy/webm-muxer
   - https://github.com/Vanilagy/mp4-muxer
 
+### Links shown in the lessons:
+- I've gathered all the links in [references](./referencias.md).
 
+### Notes
+- Ask your questions about the challenges in our community; the goal is for you to learn in a fun way. Any doubts? Ask there!
 
-### Links mostrados nos aulas:
-- Reuni todos os links em [referências](./referencias.md)
-### Considerações
-- Tire suas dúvidas sobre os desafios em nossa comunidade, o objetivo é você aprender de forma divertida. Surgiu dúvidas? Pergunte por lá!
+- Upon completing any of the challenges, post in the **#desafios** channel of the community on **Discord**.
 
-- Ao completar qualquer um dos desafios, envie no canal **#desafios** da comunidade no **Discord**
 ### FAQ
-- browser-sync está lançando erros no Windows e nunca inicializa:
-  - Solução: Trocar o browser-sync pelo http-server.
-    1. instale o **http-server**  com `npm i -D http-server`
-    2. no package.json apague todo o comando do `browser-sync` e substitua por `npx http-server .`
-    3. agora o projeto vai estar executando na :8080 então vá no navegador e tente acessar o http://localhost:8080/
-  A unica coisa, é que o projeto não vai reiniciar quando voce alterar algum código, vai precisar dar um F5 na página toda vez que alterar algo
-
+- browser-sync is throwing errors on Windows and never starts:
+  - Solution: Replace browser-sync with http-server.
+    1. Install **http-server** with `npm i -D http-server`.
+    2. In package.json, delete the entire `browser-sync` command and replace it with `npx http-server .`.
+    3. Now the project will run on :8080, so go to your browser and try accessing http://localhost:8080/
+  The only thing is that the project won't restart when you change some code; you'll need to refresh the page every time you make a change.
